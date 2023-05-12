@@ -17,6 +17,7 @@ let package = Package(
         .library(name: "ImperialMicrosoft", targets: ["ImperialCore", "ImperialMicrosoft"]),
         .library(name: "ImperialShopify", targets: ["ImperialCore", "ImperialShopify"]),
         .library(name: "ImperialDiscord", targets: ["ImperialCore", "ImperialDiscord"]),
+        .library(name: "ImperialPayPal", targets: ["ImperialCore", "ImperialPayPal"]),
         .library(name: "Imperial", targets: [
             "ImperialCore",
             "ImperialDropbox",
@@ -27,7 +28,8 @@ let package = Package(
             "ImperialKeycloak",
             "ImperialMicrosoft",
             "ImperialShopify",
-            "ImperialDiscord"
+            "ImperialDiscord",
+            "ImperialPayPal"
         ]),
     ],
     dependencies: [
@@ -51,6 +53,7 @@ let package = Package(
         .target(name: "ImperialMicrosoft", dependencies: ["ImperialCore"]),
         .target(name: "ImperialShopify", dependencies: ["ImperialCore"]),
         .target(name: "ImperialDiscord", dependencies: ["ImperialCore"]),
+        .target(name: "ImperialPayPal", dependencies: ["ImperialCore"]),
         .testTarget(name: "ImperialTests", dependencies: ["ImperialCore", "ImperialShopify"]),
     ]
 )
