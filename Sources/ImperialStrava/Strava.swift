@@ -8,7 +8,7 @@
 @_exported import ImperialCore
 import Vapor
 
-public class PayPal: FederatedService {
+public class Strava: FederatedService {
     public var tokens: FederatedServiceTokens
     public var router: FederatedServiceRouter
 
